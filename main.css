@@ -1,0 +1,143 @@
+* { /* Usado para selecionar o conteúdo da página toda */ /* Criando o reset, tirando a configuração padrão do navegador */
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, /* Selecionando texto todo do cabeçalho */
+section h2, /* Selecionando título da section */
+section h3, /* Selecionando título da section */
+form button {  /* Selecionando título do botão */
+    font-family: 'Gugi', cursive;
+    font-weight: 6000; /* Tirando o bold que o navegador aplica a font */
+}
+
+body, /* Todo texto que estiver no body */
+input,
+textarea { 
+    font-family: 'Poppins', sans-serif;
+}
+
+header { /* Personalizando o cabeçalho */
+    padding: 16px 0;
+    background-color: #181e28; /* Cor de fundo do cabeçalho */
+    color: #ee746f; /* Cor do nome no cabeçalho */
+}
+
+header nav li { /* Selecionando os links do menu para personaliza-los */
+    display: inline; /* Display para definir como eles devem se apresentar, no caso lado a lado */
+    margin-left: 16px; /* Margem esquerda */
+    font-size: 18px;
+}
+
+header nav li a { /* Selecionando o link para aplicar cor */
+color: #ee746f;
+text-decoration: none; /* Remove o underline dos itens */
+}
+
+.container { /* Selecionando o o conteúdo do container para personaliza-lo */
+    max-width: 1280px; /* Tamanho padrão */
+    width: 100%; /* Usar o máximo possível até atingir 1280px, numa tela maior que isso o conteúdo irá ficar centralizado */
+    margin: 0 auto; /* Para centralizar*/
+}
+
+header .container, /* Selecionando o container que ta dentro do header */
+section .container { /* Selecionando o container que ta dentro da section */
+    display: flex; /* Usado para colocar lado a lado o nome e os links e nas section colocar os textos ao lado da imagem */
+    align-items: center; /* Centralizar na vertical */
+    justify-content: space-between; /* Irá separar o nome e os links cada um do seu lado*/
+}
+
+.marcas img { /* Selecionando as imagens da classe "Marcas" */
+    height: 24px; /* Definindo o tamanho das imagens para 24 px */
+}
+
+.marcas li { /* Selecionado os itens da lista */
+    display: inline; /* Colocando eles um ao lado do outro */
+    margin-right: 10px;
+}
+
+section .container{ /* Sobrescrevendo a regra acima de allign-items */
+    align-items: flex-start;
+}
+
+section { /* Selecionado a seção */
+    padding: 24px 0; /* Criando um espaçamento */
+}
+
+section h2 { /* Selecionado o título da seção */
+    margin-bottom: 16px;
+}
+
+section { /* Selecionado tudo da seção */
+    color: #181e28;
+}
+
+section p { /* Selecionado o parágrafo da seção */
+    margin-bottom: 8px;
+}
+
+.fachada { /* Criamos uma classe especial para selecionar a imagem da loja apenas, sem afetar as outras imagens da seção */
+    margin-right: 32px;
+}
+
+.redes-sociais img {
+    height: 24px
+}
+
+.redes-sociais li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.redes-sociais li a {
+    text-decoration: none;
+}
+
+#contato .container {
+    display: block;
+}
+
+.contato-metodos {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+textarea,
+button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #181e28;
+    color: #ee746f;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #263142;
+}
+
+input:focus, textarea:focus {
+    outline-color: #181e28;
+}
+
+footer {
+    background-color: #181e28;
+    color: #ee746f;
+    padding: 16px 0;
+}

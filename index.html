@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Shop - A loja do gamer!</title>
+    <style>
+        body {
+        background-color: #b5dccf;
+        }
+    </style>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+                <h1>Games Shop</h1> <!-- Nome da loja no cabeçalho -->
+            <nav> <!-- Criação do menu -->
+                <ul> <!-- Listagem não ordenada -->
+                    <li> <!-- Itens da lista são adicionados através da tag li -->
+                        <a href="#sobre">Sobre a loja</a>
+                    </li>
+                    <li> <!-- Itens da lista são adicionados através da tag li -->
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="sobre"> <!-- Criando uma nova seção, no caso o "Sobre a loja"-->
+        <div class="container"> <!-- Adicionando o container a essa seção-->
+            <img class="fachada" src="./Imagens/loja.jpg" alt="Interior da loja Games Shop" /> <!-- Imagem da loja no sobre -->
+            <div>
+                <h2>Sobre a loja</h2> <!-- Título do sobre -->
+                <p> <!-- Parágrafo de texto -->
+                    Fundada em 2023, a Game Shop é uma loja especializada em jogos eletrônicos, consoles e acessórios de videogames. Nós nos esforçamos para oferecer uma ampla seleção de jogos de alta qualidade, desde os clássicos mais populares até os lançamentos mais recentes, para atender às necessidades e interesses de todos os nossos clientes. Na Game Shop, valorizamos a experiência do cliente acima de tudo, e nossos funcionários são todos entusiastas de jogos altamente treinados e experientes, prontos para ajudá-lo a encontrar o que precisa. Quer você seja um jogador casual ou um aficionado por jogos, estamos aqui para ajudá-lo a encontrar exatamente o que você está procurando.
+                </p>
+                <p>
+                    Além disso, temos uma área de jogos com estações de jogos para que você possa experimentar alguns dos jogos mais populares antes de comprá-los. Acreditamos que a melhor maneira de conhecer um jogo é jogando, então nos esforçamos para criar um ambiente divertido e acolhedor onde você possa experimentar novos jogos, conhecer outros jogadores e desfrutar do que há de melhor na cultura dos jogos eletrônicos.
+                </p>
+                <ul class="marcas"> <!-- Lista não ordenada -->
+                    <li><img src="./Imagens/nintendo.png" alt="Logo Nintendo" /></li> <!-- Adicionando imagens das marcas que fazem parte da loja -->
+                    <li><img src="./Imagens/playstation.png" alt="Logo Playstation" /></li>
+                    <li><img src="./Imagens/xbox.png" alt="Logo Xbox" /></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contato-metodos">
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required />
+                        <input type="email" placeholder="Seu e-mail" required />
+                        <input type="tel" placeholder="Seu telefone (opcional)" />
+                        <textarea placeholder="Digite sua mensagem" required ></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="redes-sociais">
+                        <li>
+                            <a href="#" title="Siga-nos no Instagram"></a>
+                                <img src="./Imagens/instagram.png" alt="Logo Instagram" />
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook"></a>
+                                <img src="./Imagens/facebook.png" alt="Logo Facebook" />
+                        </li>
+                        <li>
+                            <a href="#" title="Conheça nosso canal no Youtube"></a>
+                                <img src="./Imagens/youtube.png" alt="Logo Youtube" />
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha até nós</h3>
+                    <p>Rua Pindamoebinha, número 123, Vila Neymar - Maringá - PR</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Games Shop - Todos os direitos reservados - 2023
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
